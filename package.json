@@ -1,0 +1,43 @@
+{
+  "name": "elm-codegen",
+  "description": "Generate and maintain Elm module file!",
+  "version": "0.0.0",
+  "author": "Yu Matsuzawa @ymtszw",
+  "bin": {
+    "elm-codegen": "./bin/run"
+  },
+  "bugs": "https://github.com/ymtszw/elm-codegen/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.13",
+    "@oclif/config": "^1.12.12",
+    "@oclif/plugin-help": "^2.1.6",
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.14.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.4"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/ymtszw/elm-codegen",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "elm-codegen"
+  },
+  "repository": "ymtszw/elm-codegen",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
