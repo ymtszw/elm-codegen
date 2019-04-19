@@ -1,0 +1,20 @@
+{
+  "description": "Example Data type module.",
+  "exposedTypes": ["Data", "Id"],
+  "imports": [
+    { "module": "Favorite", "exposing": ["Favorite"] },
+    { "module": "id" }
+  ],
+  "mainType": {
+    "name": "Data",
+    "opaque": true,
+    "fields": [
+      { "name": "id", "type": "Id", "default": "Id.from \"dummy\"" },
+      { "name": "name", "type": "String", "default": "\"dummy\"" },
+      { "name": "favorites", "type": "List Favorite", "default": "[]" }
+    ]
+  },
+  "auxiliaryTypes": [
+    { "name": "Id", "alias": true, "type": "Id.Id String Data" }
+  ]
+}
